@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>ADIDAS STORE</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="assets/Adidas logo.png" alt="">
+            <h3>ADIDAS STORE</h3>
+        </div>
+        </div>
+        <div class="header-menu">
+            <div onclick="headerMenu(1)">HOME</div>
+            <div onclick="headerMenu(2)">PRODUCT</div>
+            <a href="https://wa.me/628255239589/?text=Halo, Saya Ingin Membeli Sepatu dari Produk Anda">CONTACT</a>
+            <i class="fa-solid fa-cart-shopping" style="cursor: pointer;
+                                                        color: #f7f7f7;"></i>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="welcome">WELLCOME TO ADIDAS STORE
+            <p>Our Product</p>
+        </div>
+
+        <div class="newBox" id="newBox">
+            <div class="productBox" id="productBox1">
+                <img src="assets/Adidas NMD.png" alt="" class="NMD">
+                <div class="titleBox">Adidas NMD</div>
+                <div class="descriptionBox">Style yang terinspirasi olahraga lari dengan didesain untuk eksplorasi
+                    sehari-hari.</div>
+                <div class="productBox-row">
+                    <button class="descriptionbackButton" id="descriptionButton" onclick="getDetail(7)">BACK TO
+                        HOME</button>
+                    <button class="descriptionbuyButton">ADD TO CHART</button>
+                </div>
+            </div>
+            <div class="productBox" id="productBox2">
+                <img src="assets/Adidas Ultraboost.png" alt="" class="image">
+                <div class="titleBox">Adidas Ultraboost</div>
+                <div class="descriptionBox">Sepatu Adidas Ultraboost 2019 adalah sepatu lari rajutan 3D pertama di
+                    dunia, yang dirancang untuk kinerja lebih baik dalam gerakan berlari.</div>
+                <div class="productBox-row">
+                    <button class="descriptionbackButton" id="descriptionButton" onclick="getDetail(8)">BACK TO
+                        HOME</button>
+                    <button class="descriptionbuyButton">ADD TO CHART</button>
+                </div>
+            </div>
+            <div class="productBox" id="productBox3">
+                <img src="assets/Adidas Yezzy.png" alt="" class="image">
+                <div class="titleBox">Adidas Yezzy</div>
+                <div class="descriptionBox">Adidas Yeezys adalah kekuatan dalam budaya sneaker dan seterusnya.</div>
+                <div class="productBox-row">
+                    <button class="descriptionbackButton" id="descriptionButton" onclick="getDetail(9)">BACK TO
+                        HOME</button>
+                    <button class="descriptionbuyButton">ADD TO CHART</button>
+                </div>
+            </div>
+            <div class="productBox" id="productBox4">
+                <img src="assets/Adidas Patience Rose.png" alt="" class="image">
+                <div class="titleBox">Adidas Patience Rose</div>
+                <div class="descriptionBox">Desain sepatu dibuat dengan colorfull agar menambahkan percaya diri
+                    pengguna.</div>
+                <div class="productBox-row">
+                    <button class="descriptionbackButton" id="descriptionButton" onclick="getDetail(10)">BACK TO
+                        HOME</button>
+                    <button class="descriptionbuyButton">ADD TO CHART</button>
+                </div>
+            </div>
+            <div class="productBox" id="productBox5">
+                <img src="assets/Adidas Superstar.png" alt="" class="image">
+                <div class="titleBox">Adidas Superstar</div>
+                <div class="descriptionBox">Adidas Superstar adalah sepatu basket yang diproduksi oleh Adidas sejak
+                    1969.</div>
+                <div class="productBox-row">
+                    <button class="descriptionbackButton" id="descriptionButton" onclick="getDetail(11)">BACK TO
+                        HOME</button>
+                    <button class="descriptionbuyButton">ADD TO CHART</button>
+                </div>
+            </div>
+            <div class="productBox" id="productBox6">
+                <img src="assets/Adidas Running.png" alt="">
+                <div class="titleBox">Adidas Running</div>
+                <div class="descriptionBox">Setiap bobotnya pun dapat diatur dengan baik agar kegiatan berlari atau
+                    jogging dapat terasa ringan ketika dilakukan.</div>
+                <div class="productBox-row">
+                    <button class="descriptionbackButton" id="descriptionButton" onclick="getDetail(12)">BACK TO
+                        HOME</button>
+                    <button class="descriptionbuyButton">ADD TO CHART</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="wrapper" id="wrapper">
+            <div class="card">
+                <div class="product" id="product1" onclick="getDetail(1)">
+                    <img src="assets/Adidas NMD.png" alt="" />
+                </div>
+                <div class="detail">
+                    <div class="title">Adidas NMD</div>
+                    <div class="detail-row">
+                        <div class="description">Best Shoes Ever</div>
+                        <div class="price">Rp. 1.200.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product" id="product2" onclick="getDetail(2)">
+                    <img src="assets/Adidas Ultraboost.png" alt="" />
+                </div>
+                <div class="detail">
+                    <div class="title">Adidas Ultraboost</div>
+                    <div class="detail-row">
+                        <div class="description">Comfort is in you</div>
+                        <div class="price">Rp. 699.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product" id="product3" onclick="getDetail(3)">
+                    <img src="assets/Adidas Yezzy.png" alt="" />
+                </div>
+                <div class="detail">
+                    <div class="title">Adidas Yezzy</div>
+                    <div class="detail-row">
+                        <div class="description">Cool Design</div>
+                        <div class="price">Rp. 1.000.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product" id="product4" onclick="getDetail(4)">
+                    <img src="assets/Adidas Patience Rose.png" alt="" />
+                </div>
+                <div class="detail">
+                    <div class="title">Adidas Patience</div>
+                    <div class="detail-row">
+                        <div class="description">More Comfy</div>
+                        <div class="price">Rp. 499.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product" id="product5" onclick="getDetail(5)">
+                    <img src="assets/Adidas Superstar.png" alt="" />
+                </div>
+                <div class="detail">
+                    <div class="title">Adidas Superstar</div>
+                    <div class="detail-row">
+                        <div class="description">Be like Superstar</div>
+                        <div class="price">Rp. 449.000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="product" id="product6" onclick="getDetail(6)">
+                    <img src="assets/Adidas Running.png" alt="" />
+                </div>
+                <div class="detail">
+                    <div class="title">Adidas Running </div>
+                    <div class="detail-row">
+                        <div class="description">Free to run</div>
+                        <div class="price">Rp. 799.000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top-item">
+        <div class="top-item-wrapper">
+            <h2>COMING SOON</h2>
+            <div class="top-item-row">
+                <img src="assets/Adidas Concord 2.0.png" alt="" />
+                <div class="top-item-detail">
+                    <h3>Adidas Concord</h3>
+                    <p>Unlock agility and power with Brand New Adidas Concord 2.0 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="tweak.js"></script>
+</body>
+
+</html>
